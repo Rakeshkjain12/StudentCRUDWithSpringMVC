@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.10.0.final using JasperReports Library version 6.10.0-unknown  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="studentReport" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="68ddf8ba-f8ef-4809-a501-a0374ccbcfed">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="id" class="java.lang.Integer"/>
+	<field name="name" class="java.lang.String"/>
+	<field name="address" class="java.lang.String"/>
+	<field name="course" class="java.lang.String"/>
+	<field name="contact" class="java.lang.String"/>
+	<field name="dob" class="java.lang.String"/>
+	<field name="gender" class="java.lang.String"/>
+	<field name="email" class="java.lang.String"/>
+	<field name="fname" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="124" splitType="Stretch">
+			<staticText>
+				<reportElement x="126" y="8" width="324" height="40" uuid="f4a4a226-31ee-4660-8c22-c571275008b6"/>
+				<textElement>
+					<font fontName="Adobe Naskh Medium" size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Student Information]]></text>
+			</staticText>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="40" y="90" width="130" height="20" uuid="0122efc6-5317-4ea1-a946-a51da434e62c"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField pattern="HH:mm">
+				<reportElement x="395" y="93" width="100" height="15" uuid="7ed9a03a-1fe4-42e4-a4fe-ea564930b4a2"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="46" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="30" width="560" height="1" uuid="6120da06-f306-40e1-ace2-6b60caf5104e"/>
+			</line>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="30" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="270" splitType="Stretch">
+			<textField>
+				<reportElement x="120" y="50" width="69" height="30" uuid="400986f1-3257-4aee-8bf5-be03c260f53a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="96538150-0ac0-4a14-a7d3-a081bdd6392c"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Adobe Garamond Pro Bold" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="95" width="69" height="30" uuid="ed2346c0-6655-44f4-8951-d9075c061504">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="88c5fde1-a1c9-4cb2-892a-c441152df822"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Adobe Garamond Pro Bold" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{address}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="430" y="49" width="69" height="30" uuid="5943fba8-17f7-47c1-8d31-d3897b5d94b8">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="65bebaf9-307a-4593-aefa-4ba5a302e674"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Adobe Garamond Pro Bold" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dob}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="430" y="95" width="69" height="30" uuid="92edc36b-4c10-4067-ac66-d9e57e8b4450">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e17ba4e5-9795-4396-b5b0-193ad7552036"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Adobe Garamond Pro Bold" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{gender}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="20" y="47" width="69" height="30" uuid="71478a55-6605-4e06-a329-638f78c98902">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="96538150-0ac0-4a14-a7d3-a081bdd6392c"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Adobe Garamond Pro Bold" size="14"/>
+				</textElement>
+				<text><![CDATA[Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="90" width="69" height="30" uuid="92b92e24-e5ac-4a32-8c9a-8872c42a31ea">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="88c5fde1-a1c9-4cb2-892a-c441152df822"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Adobe Garamond Pro Bold" size="14"/>
+				</textElement>
+				<text><![CDATA[Address]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="344" y="47" width="69" height="30" uuid="dac5c201-49b4-453b-b683-a9a843518452">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="65bebaf9-307a-4593-aefa-4ba5a302e674"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Adobe Garamond Pro Bold" size="14"/>
+				</textElement>
+				<text><![CDATA[DOB]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="344" y="95" width="69" height="30" uuid="7e48a7eb-e2e8-483a-b588-060cef64400a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e17ba4e5-9795-4396-b5b0-193ad7552036"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Adobe Garamond Pro Bold" size="14"/>
+				</textElement>
+				<text><![CDATA[Gender]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="121" y="0" width="72" height="30" uuid="28331d18-a92b-431e-8a3c-ec77da5f5e79">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9496da85-508b-4646-b2f2-ffa6775f467c"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Adobe Garamond Pro Bold" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="21" y="0" width="72" height="30" uuid="243a513f-a61a-4490-b2d5-57101e520e74">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9496da85-508b-4646-b2f2-ffa6775f467c"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Adobe Garamond Pro Bold" size="14"/>
+				</textElement>
+				<text><![CDATA[Id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="160" width="69" height="30" uuid="dc0b0439-c493-49f8-8d35-3b2e57cb2b0d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="394239c3-f737-45ee-bad8-afca5d6fa784"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Adobe Garamond Pro Bold" size="14"/>
+				</textElement>
+				<text><![CDATA[Course]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="120" y="160" width="69" height="30" uuid="4e8c40ca-3049-4ebf-9edb-60d36989c436">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="394239c3-f737-45ee-bad8-afca5d6fa784"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Adobe Garamond Pro Bold" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{course}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="20" y="205" width="69" height="30" uuid="5638b3b4-04a8-4961-92f0-528460670c74">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d87db218-c108-4c6d-8076-3e1084863979"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Adobe Garamond Pro Bold" size="14"/>
+				</textElement>
+				<text><![CDATA[Contact]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="120" y="205" width="69" height="30" uuid="6a7cca8b-752b-41c5-bf02-b7d80dedc262">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d87db218-c108-4c6d-8076-3e1084863979"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Adobe Garamond Pro Bold" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{contact}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="270" y="160" width="69" height="30" uuid="72205d97-cdd0-44e8-86bc-293d8850c848">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6c9f3e37-8655-4e54-811d-227095fea4d0"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Adobe Garamond Pro Bold" size="14"/>
+				</textElement>
+				<text><![CDATA[Email]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="370" y="160" width="69" height="30" uuid="0596d993-b65d-46a3-b49c-3cc77ae6ef3a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6c9f3e37-8655-4e54-811d-227095fea4d0"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Adobe Garamond Pro Bold" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{email}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="395" y="1" width="100" height="30" uuid="ae7e9d7b-a514-48ff-9e43-3d327bcb2761">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e41244e8-0ff6-4fe1-843d-fca4bbc90dfa"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Adobe Caslon Pro Bold" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fname}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="280" y="0" width="100" height="30" uuid="fb09bd21-599c-42b7-98c4-93eafecc15cc">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e41244e8-0ff6-4fe1-843d-fca4bbc90dfa"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Adobe Caslon Pro Bold" size="14"/>
+				</textElement>
+				<text><![CDATA[Father's Name]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="250" width="560" height="1" uuid="11aae4d9-0c02-4599-be08-0d53b51cf6f2"/>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
